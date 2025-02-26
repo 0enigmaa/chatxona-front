@@ -1,0 +1,127 @@
+/* Users List Container */
+.users-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    max-width: 500px;
+    height: 78vh !important;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin: 0 auto;
+    background: #ffffff8e;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+/* User Info Box */
+.user-info-box {
+    display: flex;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 12px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    position: relative;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-info-box:hover {
+    background: #f1f1f1;
+    transform: scale(1.02);
+}
+
+
+.status {
+    color: green;
+    font-size: 19px;
+}
+
+.status-off {
+    color: black;
+    font-size: 19px;
+}
+
+.dot-online {
+    position: absolute;
+    top: 5px;
+    left: -40px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(19, 146, 19);
+    border: 1px solid white;
+}
+
+
+/* User Profile Image */
+.profile-img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 2px solid white;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profile-img:hover {
+    transform: scale(1.1);
+}
+
+/* User Name & Status */
+.user-name {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    font-size: 15px;
+    font-weight: bold;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+
+
+/* Message Button */
+.message-btn {
+    margin-left: auto;
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+}
+
+
+
+.message-btn:hover {
+    background: #0056b3;
+    transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
