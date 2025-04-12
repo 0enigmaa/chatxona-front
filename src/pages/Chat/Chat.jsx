@@ -57,6 +57,7 @@ const Chat = () => {
             </div>
 
             <div className="middle-side">
+                
                 <ChatBox socket={socket} setModal={setModal} />
             </div>
 

@@ -5,7 +5,7 @@ import { toast } from 'react-toastify'
 import { getAllUser } from '../../api/userRequest'
 import { findChat } from '../../api/chatRequest'
 import './Users.css'
-const serverUrl = process.env.REACT_APP_SERVER_URL
+const serverUrl = process.env.REACT_APP_SERVER_UR;
 
 const Users = ({ modal, setModal }) => {
 
@@ -73,6 +73,7 @@ const Users = ({ modal, setModal }) => {
                                 <span className={isOnline(user._id) ? "status" : "status-off"}>
                                     {isOnline(user._id) ? 'online' : 'offline'}
                                 </span>
+
                             </div>
 
                             <button onClick={() => createdChat(user._id, currentUser._id)} className="message-btn button">

@@ -5,7 +5,7 @@ import coverImg from "../../images/coverPicture.jpg"
 import userIcon from '../../images/UserLogo.png'
 import { updateUser } from '../../api/userRequest'
 
-const serverUrl = "http://localhost:4000"
+const serverUrl = process.env.REACT_APP_SERVER_URL
 
 const Modal = ({ modal, setModal }) => {
     const { userInfo, setUserInfo, currentUser, setCurrentUser, exit } = useInfoContext()

@@ -65,7 +65,7 @@ const Auth = () => {
                         <img width={250} src="https://img.freepik.com/premium-vector/chat-app-logo-design-template-can-be-used-icon-chat-application-logo_605910-1724.jpg" alt="logo" className="logo-img" />
                     </div>
                     <div className="chat-name">
-                        <h1>Chatxona Media App</h1>
+                        <h1>Chatxona App</h1>
                         <h5>Explore with WEBSTAR IT ACADEMY</h5>
                     </div>
 

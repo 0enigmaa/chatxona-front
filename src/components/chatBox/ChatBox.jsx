@@ -136,8 +136,13 @@ const ChatBox = ({ setModal, socket }) => {
 
   return (
     <div className='chat-box'>
+
       {
         currentChat ? <>
+          {/* <a href="/">
+            <i class="fa-regular fa-circle-left fa-xl"></i>
+          </a> */}
+
           <div onClick={() => {
             setUserInfo(user)
             setModal('info')
@@ -145,12 +150,17 @@ const ChatBox = ({ setModal, socket }) => {
             <img width={50} src={user?.profilePicture ? `${serverUrl}/${user.profilePicture}` : UserIcon} alt="profile_img" className="profile-img" />
 
             <div className="user-name">
-              <h3 className="name">{user?.firstname} {user?.lastname}</h3>
-              <span className={isOnline(user?._id) ? "status" : "status-off"}>
-                {isOnline(user?._id) ? 'online' : 'offline'}
-              </span>
+              <div className="user-about">
+
+                <h3 className="name">{user?.firstname} {user?.lastname}</h3>
+                <span className={isOnline(user?._id) ? "status" : "status-off"}>
+                  {isOnline(user?._id) ? 'online' : 'offline'}
+                </span>
+              </div>
             </div>
           </div>
+
+
 
           <div className="chat-body">
             {

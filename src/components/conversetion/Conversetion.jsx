@@ -45,9 +45,12 @@ const Conversetion = ({ chat }) => {
 
             <div className="user-name">
                 <h3 className="name">{user?.firstname} {user?.lastname}</h3>
+                
                 <span className={isOnline(user?._id) ? "status" : "status-off"}>
                     {isOnline(user?._id) ? 'online' : 'offline'}
                 </span>
+
+                
             </div>
 
 
@@ -57,4 +60,4 @@ const Conversetion = ({ chat }) => {
 
 }
 
-export default Conversetion
+export default Conversetion;
